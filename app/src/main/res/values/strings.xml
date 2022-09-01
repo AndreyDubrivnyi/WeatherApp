@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Project1</string>
+    <string name="LogoText">Погода у Вашому місті</string>
+    <string name="hint_user_field">Ввести місто</string>
+    <string name="text_btn">Дізнатись погоду</string>
+    <string name="clear">Введіть Ваше місто!</string>
+    <string name="sun">Сонце</string>
+    <string name="grass">Трава</string>
+    <string name="sky">Небо</string>
+</resources>
