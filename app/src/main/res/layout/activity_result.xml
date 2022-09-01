@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/teal_200"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/background"
+        android:id="@+id/sky"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:scaleType="centerCrop"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
-        app:lottie_rawRes="@raw/gradient" />
+        app:lottie_rawRes="@raw/sky" />
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/sunny"
@@ -49,13 +49,25 @@
 
     <TextView
         android:id="@+id/result_info"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="30sp"
+        android:layout_alignParentRight="true"
+        android:layout_marginHorizontal="10sp"
         android:layout_marginTop="300sp"
-        android:layout_marginHorizontal="10sp"/>
+        android:textAlignment="textEnd"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/result_info2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginHorizontal="10sp"
+        android:layout_marginTop="300sp"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
 
 
 

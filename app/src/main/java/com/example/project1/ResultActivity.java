@@ -33,12 +33,14 @@ import java.net.URL;
 
 public class  ResultActivity extends AppCompatActivity {
     private TextView result_info;
+    private TextView result_info2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
         result_info = (TextView) findViewById(R.id.result_info);
+        result_info2 = (TextView) findViewById(R.id.result_info2);
         Intent intent = getIntent();
         String name = intent.getStringExtra("city");
         String city = name;
@@ -101,11 +103,11 @@ public class  ResultActivity extends AppCompatActivity {
                 JSONArray jsonArray = jsonObject.getJSONArray("weather");
                 JSONObject jsonWeather = jsonArray.getJSONObject(0);
 
-
-                result_info.setText("Темпаратура: " + jsonObject.getJSONObject("main").getDouble("temp") + "\n" +
-                        "Відчувається як: " + jsonObject.getJSONObject("main").getDouble("feels_like") + "\n" +
-                        "Швидкість Вітра: " + jsonObject.getJSONObject("wind").getDouble("speed") + "м/c" + "\n" +
-                        "Хмарнісь: " + jsonObject.getJSONObject("clouds").getInt("all") + "%" +"\n" + "Зараз: " +
+                result_info2.setText("Температура: "+ "\n" + "Відчувається як: "+ "\n" + "Швидкість вітра: "+ "\n" + "Хмарність: " + "\n" + "Зараз: " );
+                        result_info.setText(jsonObject.getJSONObject("main").getDouble("temp") + "\n" +
+                        jsonObject.getJSONObject("main").getDouble("feels_like") + "\n" +
+                       jsonObject.getJSONObject("wind").getDouble("speed") + "м/c" + "\n" +
+                       jsonObject.getJSONObject("clouds").getInt("all") + "%" +"\n" +
                         jsonWeather.getString("description"));
 
 
