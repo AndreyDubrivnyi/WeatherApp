@@ -42,8 +42,7 @@ public class MainActivity extends AppCompatActivity  {
 
     private EditText user_field;
     private Button main_btn;
-    private LottieAnimationView animationView;
-    private static final String [] Cities = new String[]{
+    private static final String [] cities = new String[]{
 
             "Kyiv", "Lviv", "Dnipro", "Kryvyi Rih", "Kharkiv", "Sumy", "Chernivtsi", "Vinnytsia"
             , "Odesa", "Zaporizhzhia", "Zaporizhzhia", "Mykolaiv", "Luhansk ", "Chernihiv", "Donetsk",
@@ -63,7 +62,7 @@ public class MainActivity extends AppCompatActivity  {
         setContentView(R.layout.activity_main);
 
         AutoCompleteTextView editText = findViewById(R.id.user_field);
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, Cities);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, cities);
         editText.setAdapter(adapter);
         user_field = findViewById(R.id.user_field);
         main_btn = findViewById(R.id.main_btn);

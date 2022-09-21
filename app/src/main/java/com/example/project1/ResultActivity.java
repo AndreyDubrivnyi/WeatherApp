@@ -6,23 +6,14 @@ import android.os.Bundle;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.AsyncTask;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
-import android.widget.Toast;
-import android.app.Activity;
-import android.view.Menu;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
-import android.widget.ImageView;
-
-import com.airbnb.lottie.Lottie;
 import com.airbnb.lottie.LottieAnimationView;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.w3c.dom.Text;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -53,7 +44,7 @@ public class  ResultActivity extends AppCompatActivity {
     private class GetURLData extends AsyncTask<String, String, String> {
         protected void onPreExecute() {
             super.onPreExecute();
-            result_info.setText("Зачекайте...");
+            result_info2.setText("Зачекайте...");
 
         }
 

@@ -54,9 +54,9 @@
         android:layout_alignParentRight="true"
         android:layout_marginHorizontal="10sp"
         android:layout_marginTop="300sp"
-        android:textAlignment="textEnd"
+        android:textAlignment="textStart"
         android:textColor="@color/black"
-        android:textSize="30sp" />
+        android:textSize="25sp" />
 
     <TextView
         android:id="@+id/result_info2"
@@ -65,9 +65,10 @@
         android:layout_alignParentLeft="true"
         android:layout_marginHorizontal="10sp"
         android:layout_marginTop="300sp"
-        android:textAlignment="viewStart"
+        android:textAlignment="textEnd"
         android:textColor="@color/black"
-        android:textSize="30sp" />
+        android:textSize="25sp" />
+
 
 
 
